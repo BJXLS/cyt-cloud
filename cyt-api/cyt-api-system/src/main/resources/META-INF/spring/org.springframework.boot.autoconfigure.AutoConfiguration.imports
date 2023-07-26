@@ -1,0 +1,3 @@
+com.bjxls.system.api.factory.RemoteUserFallbackFactory
+com.bjxls.system.api.factory.RemoteLogFallbackFactory
+com.bjxls.system.api.factory.RemoteFileFallbackFactory

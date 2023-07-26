@@ -1,0 +1,3 @@
+# com.bjxls.common.swagger.config.SwaggerAutoConfiguration
+# com.bjxls.common.swagger.config.SwaggerWebConfiguration
+# com.bjxls.common.swagger.config.SwaggerBeanPostProcessor

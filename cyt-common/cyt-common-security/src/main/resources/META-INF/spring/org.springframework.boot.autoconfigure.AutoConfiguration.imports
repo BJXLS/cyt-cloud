@@ -1,0 +1,5 @@
+com.bjxls.common.security.config.WebMvcConfig
+com.bjxls.common.security.service.TokenService
+com.bjxls.common.security.aspect.PreAuthorizeAspect
+com.bjxls.common.security.aspect.InnerAuthAspect
+com.bjxls.common.security.handler.GlobalExceptionHandler

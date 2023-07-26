@@ -1,0 +1,2 @@
+com.bjxls.common.log.service.AsyncLogService
+com.bjxls.common.log.aspect.LogAspect
