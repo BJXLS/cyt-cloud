@@ -9,7 +9,7 @@ import com.bjxls.gateway.handler.SentinelFallbackHandler;
 /**
  * 网关限流配置
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Configuration
 public class GatewayConfig

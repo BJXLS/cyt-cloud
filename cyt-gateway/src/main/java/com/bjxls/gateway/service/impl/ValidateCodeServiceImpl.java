@@ -23,7 +23,7 @@ import com.bjxls.gateway.service.ValidateCodeService;
 /**
  * 验证码实现处理
  *
- * @author ruoyi
+ * @author bjxls
  */
 @Service
 public class ValidateCodeServiceImpl implements ValidateCodeService

@@ -15,7 +15,7 @@ import reactor.core.publisher.Mono;
 /**
  * 获取body请求数据（解决流不能重复读取问题）
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Component
 public class CacheRequestFilter extends AbstractGatewayFilterFactory<CacheRequestFilter.Config>
@@ -48,7 +48,7 @@ public class CacheRequestFilter extends AbstractGatewayFilterFactory<CacheReques
         @Override
         public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain)
         {
-            // GET DELETE 不过滤
+            // GET DELETE 不进行操作
             HttpMethod method = exchange.getRequest().getMethod();
             if (method == null || method == HttpMethod.GET || method == HttpMethod.DELETE)
             {

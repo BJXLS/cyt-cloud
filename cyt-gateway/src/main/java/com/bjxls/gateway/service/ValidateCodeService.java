@@ -7,7 +7,7 @@ import com.bjxls.common.core.web.domain.AjaxResult;
 /**
  * 验证码处理
  *
- * @author ruoyi
+ * @author bjxls
  */
 public interface ValidateCodeService
 {
