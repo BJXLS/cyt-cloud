@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import javax.servlet.http.HttpServletResponse;
+
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -46,6 +48,7 @@ import com.bjxls.system.service.ISysUserService;
  */
 @RestController
 @RequestMapping("/user")
+@Slf4j
 public class SysUserController extends BaseController
 {
     @Autowired
@@ -112,9 +115,9 @@ public class SysUserController extends BaseController
      */
     @InnerAuth
     @GetMapping("/info/{username}")
-    public R<LoginUser> info(@PathVariable("username") String username)
-    {
+    public R<LoginUser> info(@PathVariable("username") String username) {
         SysUser sysUser = userService.selectUserByUserName(username);
+        log.info("Info username: {}", sysUser);
         if (StringUtils.isNull(sysUser))
         {
             return R.fail("用户名或密码错误");

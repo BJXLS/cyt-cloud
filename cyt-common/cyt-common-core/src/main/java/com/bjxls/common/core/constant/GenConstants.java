@@ -3,7 +3,7 @@ package com.bjxls.common.core.constant;
 /**
  * 代码生成通用常量
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class GenConstants
 {

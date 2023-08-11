@@ -32,7 +32,7 @@ import com.bjxls.system.api.domain.SysOperLog;
 /**
  * 操作日志记录处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Aspect
 @Component

@@ -5,7 +5,7 @@ import com.bjxls.common.core.utils.StringUtils;
 /**
  * 分页数据
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class PageDomain
 {

@@ -20,7 +20,7 @@ import com.bjxls.system.api.model.LoginUser;
 /**
  * token 控制
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @RestController
 public class TokenController
@@ -36,7 +36,7 @@ public class TokenController
     {
         // 用户登录
         LoginUser userInfo = sysLoginService.login(form.getUsername(), form.getPassword());
-        // 获取登录token
+        // 返回token，JWT
         return R.ok(tokenService.createToken(userInfo));
     }
 

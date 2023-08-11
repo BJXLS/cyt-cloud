@@ -6,7 +6,7 @@ import com.bjxls.common.core.utils.ServletUtils;
 /**
  * 表格数据处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class TableSupport
 {

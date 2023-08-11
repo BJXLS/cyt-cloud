@@ -3,7 +3,7 @@ package com.bjxls.common.log.enums;
 /**
  * 操作状态
  * 
- * @author ruoyi
+ * @author bjxls
  *
  */
 public enum BusinessStatus

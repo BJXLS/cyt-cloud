@@ -6,7 +6,7 @@ import com.bjxls.common.core.constant.Constants;
 /**
  * 响应信息主体
  *
- * @author ruoyi
+ * @author bjxls
  */
 public class R<T> implements Serializable
 {

@@ -7,7 +7,7 @@ import com.bjxls.system.api.domain.SysUser;
 /**
  * 用户信息
  *
- * @author ruoyi
+ * @author bjxls
  */
 public class LoginUser implements Serializable
 {

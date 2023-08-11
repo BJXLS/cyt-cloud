@@ -3,7 +3,7 @@ package com.bjxls.common.core.utils.sign;
 /**
  * Base64工具类
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public final class Base64
 {

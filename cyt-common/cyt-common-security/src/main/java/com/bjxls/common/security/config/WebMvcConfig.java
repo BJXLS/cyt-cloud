@@ -7,7 +7,7 @@ import com.bjxls.common.security.interceptor.HeaderInterceptor;
 /**
  * 拦截器配置
  *
- * @author ruoyi
+ * @author bjxls
  */
 public class WebMvcConfig implements WebMvcConfigurer
 {

@@ -65,7 +65,7 @@ import com.bjxls.common.core.utils.reflect.ReflectUtils;
 /**
  * Excel相关处理
  *
- * @author ruoyi
+ * @author bjxls
  */
 public class ExcelUtil<T>
 {

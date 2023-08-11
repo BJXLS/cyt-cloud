@@ -3,7 +3,7 @@ package com.bjxls.common.core.constant;
 /**
  * 通用常量信息
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class Constants
 {

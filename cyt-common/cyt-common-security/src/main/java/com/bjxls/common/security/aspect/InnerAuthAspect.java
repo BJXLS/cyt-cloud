@@ -14,7 +14,7 @@ import com.bjxls.common.security.annotation.InnerAuth;
 /**
  * 内部服务调用验证处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Aspect
 @Component
@@ -24,7 +24,7 @@ public class InnerAuthAspect implements Ordered
     public Object innerAround(ProceedingJoinPoint point, InnerAuth innerAuth) throws Throwable
     {
         String source = ServletUtils.getRequest().getHeader(SecurityConstants.FROM_SOURCE);
-        // 内部请求验证
+        // TODO 感觉这种内部验证，好粗糙啊
         if (!StringUtils.equals(SecurityConstants.INNER, source))
         {
             throw new InnerAuthException("没有内部访问权限，不允许访问");

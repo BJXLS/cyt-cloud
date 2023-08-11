@@ -21,7 +21,7 @@ import com.bjxls.system.api.model.LoginUser;
 /**
  * 登录校验方法
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Component
 public class SysLoginService
@@ -68,7 +68,7 @@ public class SysLoginService
         if (IpUtils.isMatchedIp(blackStr, IpUtils.getIpAddr()))
         {
             recordLogService.recordLogininfor(username, Constants.LOGIN_FAIL, "很遗憾，访问IP已被列入系统黑名单");
-            throw new ServiceException("很遗憾，访问IP已被列入系统黑名单");
+            throw new ServiceException("很遗憾，访问IP已被列入系统黑名单，请联系系统管理员");
         }
         // 查询用户信息
         R<LoginUser> userResult = remoteUserService.getUserInfo(username, SecurityConstants.INNER);
@@ -88,7 +88,7 @@ public class SysLoginService
         SysUser user = userResult.getData().getSysUser();
         if (UserStatus.DELETED.getCode().equals(user.getDelFlag()))
         {
-            recordLogService.recordLogininfor(username, Constants.LOGIN_FAIL, "对不起，您的账号已被删除");
+            recordLogService.recordLogininfor(username, Constants.LOGIN_FAIL, "对不起，您的账号已被删除，请联系管理员！");
             throw new ServiceException("对不起，您的账号：" + username + " 已被删除");
         }
         if (UserStatus.DISABLE.getCode().equals(user.getStatus()))
@@ -97,6 +97,7 @@ public class SysLoginService
             throw new ServiceException("对不起，您的账号：" + username + " 已停用");
         }
         passwordService.validate(user, password);
+        // 登录成功，记录log
         recordLogService.recordLogininfor(username, Constants.LOGIN_SUCCESS, "登录成功");
         return userInfo;
     }

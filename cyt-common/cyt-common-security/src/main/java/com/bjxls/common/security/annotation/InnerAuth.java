@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * 内部认证注解
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
@@ -13,7 +13,7 @@ import java.lang.annotation.*;
 public @interface InnerAuth
 {
     /**
-     * 是否校验用户信息
+     * 是否需要校验用户信息，（username和userId是否为空）
      */
     boolean isUser() default false;
 }

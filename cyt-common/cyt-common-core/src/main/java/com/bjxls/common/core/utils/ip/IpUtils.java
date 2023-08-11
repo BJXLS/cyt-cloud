@@ -9,7 +9,7 @@ import com.bjxls.common.core.utils.StringUtils;
 /**
  * 获取IP方法
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class IpUtils
 {

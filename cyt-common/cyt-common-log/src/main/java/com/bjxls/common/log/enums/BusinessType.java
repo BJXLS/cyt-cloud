@@ -3,7 +3,7 @@ package com.bjxls.common.log.enums;
 /**
  * 业务操作类型
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public enum BusinessType
 {

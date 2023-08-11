@@ -3,7 +3,7 @@ package com.bjxls.common.core.exception;
 /**
  * 验证码错误异常类
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class CaptchaException extends RuntimeException
 {

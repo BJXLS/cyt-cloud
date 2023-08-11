@@ -11,7 +11,7 @@ import com.bjxls.common.core.utils.StringUtils;
 /**
  * 类型转换器
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class Convert
 {

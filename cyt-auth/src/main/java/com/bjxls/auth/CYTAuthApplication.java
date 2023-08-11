@@ -8,7 +8,7 @@ import com.bjxls.common.security.annotation.EnableRyFeignClients;
 /**
  * 认证授权中心
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @EnableRyFeignClients
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
@@ -17,15 +17,10 @@ public class CYTAuthApplication
     public static void main(String[] args)
     {
         SpringApplication.run(CYTAuthApplication.class, args);
-        System.out.println("(♥◠‿◠)ﾉﾞ  认证授权中心启动成功   ლ(´ڡ`ლ)ﾞ  \n" +
-                " .-------.       ____     __        \n" +
-                " |  _ _   \\      \\   \\   /  /    \n" +
-                " | ( ' )  |       \\  _. /  '       \n" +
-                " |(_ o _) /        _( )_ .'         \n" +
-                " | (_,_).' __  ___(_ o _)'          \n" +
-                " |  |\\ \\  |  ||   |(_,_)'         \n" +
-                " |  | \\ `'   /|   `-'  /           \n" +
-                " |  |  \\    /  \\      /           \n" +
-                " ''-'   `'-'    `-..-'              ");
+        System.out.println("认证授权中心启动成功\n" +
+                "  ___  _  _  ____ \n" +
+                " / __)( \\/ )(_  _)\n" +
+                "( (__  \\  /   )(  \n" +
+                " \\___) (__)  (__)");
     }
 }

@@ -8,7 +8,7 @@ import com.bjxls.common.core.web.page.TableSupport;
 /**
  * 分页工具类
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class PageUtils extends PageHelper
 {

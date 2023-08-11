@@ -12,7 +12,7 @@ import com.bjxls.system.api.domain.SysLogininfor;
 /**
  * 记录日志方法
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Component
 public class SysRecordLogService

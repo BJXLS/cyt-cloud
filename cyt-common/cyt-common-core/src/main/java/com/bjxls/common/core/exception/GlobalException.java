@@ -3,7 +3,7 @@ package com.bjxls.common.core.exception;
 /**
  * 全局异常
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class GlobalException extends RuntimeException
 {

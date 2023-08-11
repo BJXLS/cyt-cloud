@@ -3,7 +3,7 @@ package com.bjxls.common.core.constant;
 /**
  * 返回状态码
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class HttpStatus
 {

@@ -3,7 +3,7 @@ package com.bjxls.common.core.constant;
 /**
  * 任务调度通用常量
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class ScheduleConstants
 {

@@ -12,7 +12,7 @@ import com.bjxls.system.api.domain.SysOperLog;
 /**
  * 日志服务降级处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Component
 public class RemoteLogFallbackFactory implements FallbackFactory<RemoteLogService>

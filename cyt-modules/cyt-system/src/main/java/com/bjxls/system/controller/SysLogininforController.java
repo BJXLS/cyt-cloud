@@ -2,6 +2,8 @@ package com.bjxls.system.controller;
 
 import java.util.List;
 import javax.servlet.http.HttpServletResponse;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -30,6 +32,7 @@ import com.bjxls.system.service.ISysLogininforService;
  */
 @RestController
 @RequestMapping("/logininfor")
+@Slf4j
 public class SysLogininforController extends BaseController
 {
     @Autowired
@@ -77,16 +80,15 @@ public class SysLogininforController extends BaseController
     @RequiresPermissions("system:logininfor:unlock")
     @Log(title = "账户解锁", businessType = BusinessType.OTHER)
     @GetMapping("/unlock/{userName}")
-    public AjaxResult unlock(@PathVariable("userName") String userName)
-    {
+    public AjaxResult unlock(@PathVariable("userName") String userName) {
         redisService.deleteObject(CacheConstants.PWD_ERR_CNT_KEY + userName);
         return success();
     }
 
     @InnerAuth
     @PostMapping
-    public AjaxResult add(@RequestBody SysLogininfor logininfor)
-    {
+    public AjaxResult add(@RequestBody SysLogininfor logininfor) {
+        log.info("logininfor:{}", logininfor);
         return toAjax(logininforService.insertLogininfor(logininfor));
     }
 }

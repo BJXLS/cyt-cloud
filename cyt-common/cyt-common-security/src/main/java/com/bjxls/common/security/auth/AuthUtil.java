@@ -7,7 +7,7 @@ import com.bjxls.system.api.model.LoginUser;
 /**
  * Token 权限验证工具类
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class AuthUtil
 {

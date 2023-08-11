@@ -12,7 +12,7 @@ import com.bjxls.system.api.domain.SysDictData;
 /**
  * 字典工具类
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class DictUtils
 {

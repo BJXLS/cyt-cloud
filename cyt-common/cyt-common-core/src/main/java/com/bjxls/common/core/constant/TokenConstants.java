@@ -3,7 +3,7 @@ package com.bjxls.common.core.constant;
 /**
  * Token的Key常量
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class TokenConstants
 {
@@ -20,6 +20,6 @@ public class TokenConstants
     /**
      * 令牌秘钥
      */
-    public final static String SECRET = "abcdefghijklmnopqrstuvwxyz";
+    public final static String SECRET = "cytdefghijklmnopqrstuvwxyz";
 
 }

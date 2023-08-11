@@ -13,7 +13,7 @@ import com.bjxls.common.core.web.domain.BaseEntity;
 /**
  * 部门表 sys_dept
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class SysDept extends BaseEntity
 {

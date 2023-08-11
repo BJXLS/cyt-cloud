@@ -3,7 +3,7 @@ package com.bjxls.common.core.exception;
 /**
  * 检查异常
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class CheckedException extends RuntimeException
 {

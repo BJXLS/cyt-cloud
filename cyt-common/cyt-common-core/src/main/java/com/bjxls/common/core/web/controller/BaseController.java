@@ -17,7 +17,7 @@ import com.bjxls.common.core.web.page.TableDataInfo;
 /**
  * web层通用数据处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class BaseController
 {

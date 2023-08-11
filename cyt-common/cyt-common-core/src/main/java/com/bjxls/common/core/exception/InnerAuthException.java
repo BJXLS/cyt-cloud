@@ -3,7 +3,7 @@ package com.bjxls.common.core.exception;
 /**
  * 内部认证异常
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class InnerAuthException extends RuntimeException
 {

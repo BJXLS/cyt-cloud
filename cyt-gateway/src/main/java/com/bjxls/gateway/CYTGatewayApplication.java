@@ -20,6 +20,5 @@ public class CYTGatewayApplication
                 " / __)( \\/ )(_  _)\n" +
                 "( (__  \\  /   )(  \n" +
                 " \\___) (__)  (__)");
-
     }
 }

@@ -3,7 +3,7 @@ package com.bjxls.common.core.enums;
 /**
  * 用户状态
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public enum UserStatus
 {

@@ -3,7 +3,7 @@ package com.bjxls.common.core.exception;
 /**
  * 权限异常
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class PreAuthorizeException extends RuntimeException
 {

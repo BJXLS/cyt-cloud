@@ -5,7 +5,7 @@ import com.bjxls.common.core.utils.StringUtils;
 /**
  * 字符串格式化
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class StrFormatter
 {

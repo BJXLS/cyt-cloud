@@ -46,7 +46,7 @@ public class AuthFilter implements GlobalFilter, Ordered
         ServerHttpRequest.Builder mutate = request.mutate();
 
         String url = request.getURI().getPath();
-        // 跳过不需要验证的路径
+        // 跳过白名单（除此之外都需要）
         if (StringUtils.matches(url, ignoreWhite.getWhites()))
         {
             return chain.filter(exchange);
@@ -62,6 +62,7 @@ public class AuthFilter implements GlobalFilter, Ordered
             return unauthorizedResponse(exchange, "令牌已过期或验证不正确！");
         }
         String userkey = JwtUtils.getUserKey(claims);
+        // redis记录登录状态
         boolean islogin = redisService.hasKey(getTokenKey(userkey));
         if (!islogin)
         {
@@ -74,6 +75,7 @@ public class AuthFilter implements GlobalFilter, Ordered
             return unauthorizedResponse(exchange, "令牌验证失败");
         }
 
+        // 对请求信息进行改造
         // 设置用户信息到请求
         addHeader(mutate, SecurityConstants.USER_KEY, userkey);
         addHeader(mutate, SecurityConstants.DETAILS_USER_ID, userid);

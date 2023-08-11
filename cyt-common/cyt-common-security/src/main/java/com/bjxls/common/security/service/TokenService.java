@@ -20,7 +20,7 @@ import com.bjxls.system.api.model.LoginUser;
 /**
  * token验证处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Component
 public class TokenService
@@ -41,8 +41,7 @@ public class TokenService
     /**
      * 创建令牌
      */
-    public Map<String, Object> createToken(LoginUser loginUser)
-    {
+    public Map<String, Object> createToken(LoginUser loginUser) {
         String token = IdUtils.fastUUID();
         Long userId = loginUser.getSysUser().getUserId();
         String userName = loginUser.getSysUser().getUserName();
@@ -50,16 +49,16 @@ public class TokenService
         loginUser.setUserid(userId);
         loginUser.setUsername(userName);
         loginUser.setIpaddr(IpUtils.getIpAddr());
-        refreshToken(loginUser);
+        refreshToken(loginUser); // 当前token存12小时
 
         // Jwt存储信息
-        Map<String, Object> claimsMap = new HashMap<String, Object>();
+        Map<String, Object> claimsMap = new HashMap<>();
         claimsMap.put(SecurityConstants.USER_KEY, token);
         claimsMap.put(SecurityConstants.DETAILS_USER_ID, userId);
         claimsMap.put(SecurityConstants.DETAILS_USERNAME, userName);
 
         // 接口返回信息
-        Map<String, Object> rspMap = new HashMap<String, Object>();
+        Map<String, Object> rspMap = new HashMap<>();
         rspMap.put("access_token", JwtUtils.createToken(claimsMap));
         rspMap.put("expires_in", expireTime);
         return rspMap;
@@ -159,7 +158,7 @@ public class TokenService
         loginUser.setExpireTime(loginUser.getLoginTime() + expireTime * MILLIS_MINUTE);
         // 根据uuid将loginUser缓存
         String userKey = getTokenKey(loginUser.getToken());
-        redisService.setCacheObject(userKey, loginUser, expireTime, TimeUnit.MINUTES);
+        redisService.setCacheObject(userKey, loginUser, expireTime, TimeUnit.MINUTES); // 12小时
     }
 
     private String getTokenKey(String token)

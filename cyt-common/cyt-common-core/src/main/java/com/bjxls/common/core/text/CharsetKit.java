@@ -7,7 +7,7 @@ import com.bjxls.common.core.utils.StringUtils;
 /**
  * 字符集工具类
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class CharsetKit
 {

@@ -17,7 +17,7 @@
 
     <dependencies>
 		
-        <!-- RuoYi Common Core-->
+        <!-- CYT Common Core-->
         <dependency>
             <groupId>com.bjxls</groupId>
             <artifactId>cyt-common-core</artifactId>

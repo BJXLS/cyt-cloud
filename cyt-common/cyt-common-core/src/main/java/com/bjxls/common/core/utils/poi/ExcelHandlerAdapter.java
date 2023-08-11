@@ -3,7 +3,7 @@ package com.bjxls.common.core.utils.poi;
 /**
  * Excel数据格式处理适配器
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public interface ExcelHandlerAdapter
 {

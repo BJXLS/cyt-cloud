@@ -19,7 +19,7 @@ import com.bjxls.system.api.model.LoginUser;
 /**
  * 数据过滤处理
  * 
- * @author ruoyi
+ * @author bjxls
  */
 @Aspect
 @Component

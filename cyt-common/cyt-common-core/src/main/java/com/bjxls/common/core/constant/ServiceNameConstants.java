@@ -3,7 +3,7 @@ package com.bjxls.common.core.constant;
 /**
  * 服务名称
  * 
- * @author ruoyi
+ * @author bjxls
  */
 public class ServiceNameConstants
 {
