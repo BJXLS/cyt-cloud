@@ -8,10 +8,9 @@
 2. Spring Cloud Alibaba
 3. Redis
 4. RocketMQ
-5. 
-* 后端采用Spring Boot、Spring Cloud & Alibaba。
-* 注册中心、配置中心选型Nacos，权限认证使用Redis。
-* 流量控制框架选型Sentinel，分布式事务选型Seata。
+5. Nacos
+6. MyBatis
+7. MySQL
 
 ## 系统服务
 1. cyt-gateway：网关服务
